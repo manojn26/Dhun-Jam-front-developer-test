@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background: #030303;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin-top: -30px;
+
+  width: 600px;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.charge-for-customers {
+  display: flex;
+}
+.charge-for-customers-question,
+.charge-for-customers-answers {
+  flex-basis: 50%;
+}
+.charge-for-customers-answers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.custom-song-amount-request {
+  display: flex;
+}
+.custom-song-amount-request-questions,
+.custom-song-amount-request-answers {
+  flex-basis: 50%;
+}
+
+.custom-song-amount-request-answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.custom-song-amount-request-answers input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ffffff;
+  background-color: #030303;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.regular-song-request-amount {
+  display: flex;
+}
+
+.regular-song-request-amount-questions {
+  flex-basis: 50%;
+  margin-top: -10px;
+}
+
+.regular-song-request-amount-answers {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.regular-song-request-amount-answers input {
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #ffffff;
+  background-color: #030303;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+}
+#greyed {
+  border: 2px solid red;
+}
+.regular-song-request-amount-answers div #greyed {
+  border: 2px solid red;
+}
+
+.graph-container {
+  width: 600px;
+  height: 400px;
+  margin-top: -50px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.save-button {
+  background: #6741d9;
+  color: #ffffff;
+}
+.save-button:hover {
+  border: 1px solid #f0c3f1;
+}

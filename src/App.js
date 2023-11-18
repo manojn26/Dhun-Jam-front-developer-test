@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import LoginScreen from "./Screens/LoginScreen";
+import DashboardScreen from "./Screens/DashboardScreen";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState, createContext } from "react";
+
+// Global Context for User Details
+export const AppContext = createContext();
 
 function App() {
+  // Setting State fot User Details
+  const [userAuth, setUserAuth] = useState({
+    id: "",
+    response: "",
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={{ userAuth, setUserAuth }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LoginScreen />} />
+          <Route path='/dashboard' element={<DashboardScreen />} />
+        </Routes>
+      </BrowserRouter>
+    </AppContext.Provider>
   );
 }
 

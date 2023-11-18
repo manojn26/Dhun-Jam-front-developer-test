@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background: #030303;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 95vw;
+}
+.form-conainer {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-name {
+  border: 1px solid #f0c3f1;
+  width: 400px;
+  padding: 8px;
+  border-radius: 10px;
+}
+.user-name input {
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: #030303;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+}
+
+.user-password {
+  border: 1px solid #f0c3f1;
+  width: 400px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.user-password input {
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: #030303;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: left;
+}
+.password-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  font-size: 20px;
+}
+
+.submit-button,
+button {
+  width: 400px;
+}
+
+button {
+  height: 30px;
+  padding: 20px;
+  background: #6741d9;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
